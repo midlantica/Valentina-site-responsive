@@ -1,0 +1,128 @@
+.mainNav {
+  @include span-columns(8);
+  @include shift(2);
+  position: relative;
+  margin-top: -4em;
+  // padding: 0;
+
+  @include media($mobile) {
+    @include span-columns(8);
+    @include shift(2);
+    margin-top: -4em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      @include span-columns(2 of 10, block-collapse);
+      font-family: $header-font;
+      font-size: 1.8em;
+      padding: 0;
+      margin: 0;
+      &:last-child {
+        @include omega();
+        // background: red;
+      }
+
+      @include media($mobile) {
+        // width: 20%;
+        // @include span-columns(2 of 10, block-collapse);
+        // background: red;
+        &:last-child {
+          @include omega();
+          // background: red;
+        }
+      }
+
+      a {
+        color: $black;
+
+      }
+    }
+  }
+}
+
+.navBtns {
+  text-decoration: none;
+  list-style-image: none;
+  // width: 121px;
+  height: auto;
+  line-height: 119px;
+  color: $black;
+  text-align: center;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+
+  a {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+}
+
+.homeBtn {
+  padding-right: 0.5em;
+  &:hover {
+    background-image: url(../img/buttons/home_btn.svg);
+    cursor: pointer;
+
+  }
+}
+.galleryBtn {
+  //
+  &:hover {
+    background-image: url(../img/buttons/gallery_btn.svg);
+    cursor: pointer;
+
+  }
+}
+.shopBtn {
+  padding-left: 0.2em;
+  &:hover {
+    background-image: url(../img/buttons/shop_btn.svg);
+    cursor: pointer;
+
+  }
+}
+.contactBtn {
+  //
+  &:hover {
+    background-image: url(../img/buttons/contact_btn.svg);
+    cursor: pointer;
+
+  }
+}
+.blogBtn {
+  padding-left: 0.1em;
+  &:hover {
+    background-image: url(../img/buttons/blog_btn.svg);
+    cursor: pointer;
+
+  }
+}
+
+// Upstate on individual pages
+body.index .homeBtn {
+  background-image: url(../img/buttons/home_btn.svg);
+}
+body.artists-statement .homeBtn {
+  background-image: url(../img/buttons/home_btn.svg);
+}
+body.original-artwork .galleryBtn {
+  background-image: url(../img/buttons/gallery_btn.svg);
+}
+body.shop .shopBtn {
+  background-image: url(../img/buttons/shop_btn.svg);
+}
+body.contact .contactBtn {
+  background-image: url(../img/buttons/contact_btn.svg);
+}
+// .blogBtn {
+//   background-image: url(../img/buttons/blog_btn.svg);
+// }

@@ -1,0 +1,30 @@
+---
+title: Valentina Design - Feeling Inspired :)
+---
+
+  <%= partial "partials/header" %>
+
+  <%= partial "partials/nav" %>
+
+  <div class="content">
+
+    <aside class="col1">
+      <img class="valPic" src="img/val_pic.jpg">
+      <p class="statement"><%= link_to 'See Artist\'s Statement', '/artists-statement.html'%></p>
+    </aside>
+
+    <main class="home">
+
+      <h2>Welcome to Valentina's world</h2>
+      <p><b>After 15 years working as a graphic designer, Valentina Harper (formerly Ramos)</b> started to create other arts and crafts. From these creations, Valentina Design was born: her world of fantasies and dreams; where her uplifting drawings and designs took shape.</p>
+      <p>In her Nashville studio, this Venezuelan artist spent countless happy hours playing with her paints and her <%= link_to 'Rapidograph pens', 'http://www.kohinoorusa.com/products/pens/rapidograph/index.html', :target => :_blank %>. She enjoys working with different materials, but black ink is one of the mediums you will always find in her original prints, paintings and drawings. Her love for artworks with little intricate details are a signature of her own drawing style.</p>
+
+    </main>
+
+    <aside class="col3">
+      <%= partial "partials/social" %>
+    </aside>
+
+  </div>
+
+  <%= partial "partials/footer" %>

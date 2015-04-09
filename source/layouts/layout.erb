@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= "Valentina Design" || current_page.data.title %></title>
+
+    <%= stylesheet_link_tag "styles" %>
+
+    <%= javascript_include_tag "vendor/modernizr-2.8.3.min.js" %>
+    <%= javascript_include_tag "vendor/jquery-1.11.2.min.js" %>
+    <%= javascript_include_tag "vendor/lightbox" %>
+
+    <%= partial "partials/favicons" %>
+
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <%= partial "partials/ifIE" %>
+
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <%= javascript_include_tag "plugins" %>
+    <%= javascript_include_tag "main" %>
+
+    <!-- popOver -->
+    <%# javascript_include_tag "popOver.js" %>
+
+    <!-- <div id="popOverImg" class="hide">
+      <a href="https://www.kickstarter.com/projects/778745924/feeling-inspired-app" target="_blank"><img src="img/app_popOver2.jpg" width="500" height="400"></a>
+      <div id="remove">X</div>
+    </div> -->
+
+  </body>
+</html>

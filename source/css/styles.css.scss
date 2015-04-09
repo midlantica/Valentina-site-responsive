@@ -1,0 +1,97 @@
+@import "base"; // Compass, Normalize, h5bp, bourbon, neat, !susy, !breakpoint
+@import "colors";
+@import "_imports/fonts";
+@import "_imports/layout";
+@import "_imports/mortar";
+@import "_imports/mixins";
+@import "_imports/modal";
+@import "_imports/nav";
+@import "_imports/social";
+@import "_imports/typography";
+@import "_contact";
+@import "_shop";
+@import "_gallery";
+
+// ########################
+
+
+// link colors
+a {
+    @include link-colors
+    ($purple,
+     $orange,
+     $purple,
+     $purple,
+     $purple);
+     text-decoration: none;
+     border-bottom: 1px dotted #b9d54a;
+
+}
+
+// a hrefs animation
+a {
+    text-decoration: none;
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-in);
+    @include link-colors(
+        $normal: $purple,
+        $visited: darken($purple,15),
+        $hover: darken($purple,15));
+}
+
+// ########################
+
+svg:not(:root) {
+   overflow: visible !important;
+}
+
+.headerArt {
+  width: 100%;
+  height: auto;
+  // display: invisible;
+  @include media($mobile) {
+    width: 100%;
+    height: auto;
+  }
+  // &:hover {
+  //   background: red;
+  //   display: block;
+  // }
+}
+
+.footerArt {
+  width: 100%;
+  height: auto;
+  // display: block;
+}
+
+.valPic {
+  // @include span-columns(3);
+  // width: 100%;
+  @include fill-parent();
+  margin-top: 0.3em;
+  border-radius: 20em;
+  // @include media($mobile) {
+      // @include span-columns(5);
+      // width:1%;
+      // background: $white;
+  // }
+}
+
+.statement {
+  font-size: 1em;
+  text-align: center;
+  float: none;
+  margin-top: 0.4em;
+}
+
+.delinky {
+  margin: 0;
+  a {
+    border: none;
+  }
+}
+
+
+

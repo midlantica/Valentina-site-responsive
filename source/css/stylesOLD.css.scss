@@ -1,0 +1,714 @@
+@import "compass";
+@import "base";
+@import "fonts";
+@import "modal";
+
+$header-font: witchedregular;
+$copy: Register;
+$copy-bold: RegisterBold;
+
+body {
+    background-color: $purple;
+}
+
+h1, h2, h3 {
+    font-family: $copy-bold;
+    color:$purple;
+    font-weight: normal;
+    letter-spacing: 0em;
+    margin: .1em 0 0 0;
+
+}
+
+h3, h4, h5 {
+    font-family: $copy-bold;
+    color:$purple;
+    letter-spacing: 0.06em;
+    margin: 1em 0 -.25em 0;
+
+}
+
+h2:first-child {
+    margin: 0 0 .5em 0;
+    letter-spacing: 0em;
+}
+
+
+
+
+p {
+    font-family: Register;
+    color: $grey;
+    font: 1em;
+    letter-spacing: 0.065em;
+    margin: 0 0 0 0;
+}
+
+
+
+p:first-child {
+    margin: 0 0 1em 0;
+}
+
+p b {
+    color: $grey;
+}
+
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('../img/white_back_patt.png');
+    background-repeat: repeat-y;
+    background-position: center top;
+    position: absolute;
+}
+
+#innerwrapper {
+    width: 780px;
+    margin: -80px auto 0;
+    text-align: center;
+}
+
+#contact #innerwrapper {
+    // width: 780px;
+    // margin: -80px auto 0;
+    // text-align: center;
+    background-image: url('../img/contact_bird.png');
+    background-repeat: no-repeat;
+    background-position: 0 150px;
+}
+
+#content {
+    width: 84%;
+    display: block;
+    /*min-height: 250px;*/
+    text-align: left;
+    margin: 0 auto;
+    padding:0 0 1em 0;
+    @include clearfix;
+}
+
+/* >>> HEADS AND COPY */
+
+#nav {
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    text-align: center;
+    margin: 0 auto;
+    width: 680px;
+    height: 121px;
+}
+
+#nav ul {
+    font-family: 'witchedregular';
+    font-size: 30px;
+    margin: 0 auto;
+    border: 0;
+    overflow: hidden;
+   *zoom: 1;
+    text-align: center;
+    height: 121px;
+}
+
+#nav ul li {
+    white-space: nowrap;
+    display: block;
+    float: left;
+    color: $grey;
+    height: 119px;
+    width: 121px;
+}
+
+#nav ul li a {
+    color: $grey;
+}
+
+#nav ul li.first {
+    padding-left: 0;
+}
+
+#nav ul li:last-child {
+    padding-right: 0;
+}
+
+#nav ul li.last {
+    padding-right: 0;
+}
+
+#nav ul li {
+    padding: 0px;
+    list-style-type: none;
+    text-align:center;
+}
+
+#header {
+    width: 960px;
+    height: 312px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../img/header-art.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* >>> FOOTER BACKGROUND */
+
+#footer {
+    display: block;
+    width: 960px;
+    height: 233px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../img/footer-art.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#footer p {
+    font-family: Register, Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    display: block;
+    margin: 1em auto 0 auto;
+    width:680px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#footer #nav ul {
+    font-family: Register;
+    font-size: 1em;
+    margin-left: 0;
+    color:$grey;
+}
+
+
+/* NAVVY LI */
+
+#nav li {
+    color: $grey;
+    line-height: 125px;
+    width:119px;
+    height:121px;
+}
+
+  #nav li a:link {
+      color: $grey;
+      display:block;
+      height:121px;
+  }
+
+    #nav li a:hover {
+        color: $grey;
+        height:121px;
+    }
+
+       /*HOME BTN*/
+      #index #nav li.index a:link {
+          color: $grey;
+          background-image:url(../img/buttons/home-btn-hover.png);
+          background-position: 12px 0px;
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+      }
+
+        #nav li.index a:hover {
+            color: $grey;
+            background-image:url(../img/buttons/home-btn-hover.png);
+            background-position: 12px 0px;
+            background-repeat: no-repeat;
+            margin: 0 0 0 0;
+        }
+
+      #artist_statement #nav li.index a:link {
+          color: $grey;
+          background-image:url(../img/buttons/home-btn-hover.png);
+          background-position: 12px 0px;
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+      }
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+
+       /* Original Artwork BTN*/
+      #original_artwork #nav li.original_artwork a:link {
+          color: $green;
+          background-image:url(../img/buttons/original-artwork-btn-hover.png);
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+      }
+
+       #digital_artwork #nav li.original_artwork a:link {
+          color: $green;
+          background-image:url(../img/buttons/original-artwork-btn-hover.png);
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+       }
+
+       #patterns #nav li.original_artwork a:link {
+          color: $green;
+          background-image:url(../img/buttons/original-artwork-btn-hover.png);
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+       }
+
+      /*#patterns #nav li.patterns a:link {
+          color: $grey;
+          background-image:url(../img/buttons/original-artwork-btn-hover.png);
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+      }*/
+
+        #nav li.original_artwork a:hover {
+            color: $grey;
+            background-image:url(../img/buttons/original-artwork-btn-hover.png);
+            background-repeat: no-repeat;
+            margin: 0 0 0 0;
+        }
+
+      /* SHOP BTN */
+      #shop #nav li.shop a:link {
+          color: $grey;
+          margin: 0 0 0 24px;
+          background-image:url(../img/buttons/shop-btn-hover.png);
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+      }
+        #nav li.shop a:hover {
+            color: $grey;
+            margin: 0 0 0 24px;
+            background-image: url(../img/buttons/shop-btn-hover.png);
+            background-repeat: no-repeat;
+            margin: 0 0 0 0;
+            height: 121px;
+        }
+
+        #contact #nav li.contact a:link {
+          color: $grey;
+          margin: 0 0 0 24px;
+          background-image:url(../img/buttons/contact-btn-hover.png);
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+      }
+
+        #nav li.contact a:hover {
+            color: $grey;
+            margin: 0 0 0 24px;
+            background-image:url(../img/buttons/contact-btn-hover.png);
+            background-repeat: no-repeat;
+            margin: 0 0 0 0;
+        }
+
+       /*BLOG BTN */
+
+      #blog #nav li.blog a:link {
+          color: $grey;
+          background-image: url(../img/buttons/blog-btn-hover.png);
+          background-position: center -3px;
+          background-repeat: no-repeat;
+          margin: 0 0 0 0;
+      }
+
+        #nav li.blog a:hover {
+            color: $grey;
+            background-image: url(../img/buttons/blog-btn-hover.png);
+            background-position: center -3px;
+            background-repeat: no-repeat;
+            margin: 0 0 0 0;
+        }
+
+
+/* //END BLOG BTN*/
+
+
+/* FOOTER NAV */
+
+
+  #footer #nav ul {
+      height: auto;
+      display:block;
+  }
+    #footer #nav ul li {
+      height: 20px;
+      width: auto;
+      display: inline;
+      text-transform: uppercase;
+      background-image:none;
+    }
+    #footer #nav ul li {
+      font-family: 'Register Sans BTN', Arial, sans-serif;
+      font-size: 0.8em;
+      list-style-type: none;
+      float: left;
+      color: $purple;
+      line-height: 1.5em;
+      padding: 0 0 0 0;
+      margin: 0 0 0 4.85em;
+      letter-spacing: 0.1em;
+      background-image: none;
+    }
+      #footer #nav ul li a:link {
+          display: inline;
+          background-image:none;
+      }
+
+        #footer #nav ul li a:hover {
+          color: $purple;
+          border-bottom: 2px dotted $orange;
+          background-image: none;
+        }
+
+      #wrapper #footer #nav {
+        height: 20px;
+        margin: 0 auto;
+      }
+
+
+      #footer #nav p {
+        font-family: 'Register Sans BTN', Arial, sans-serif;
+        font-size:.85em;
+        line-height:1em;
+        margin:0 auto;
+        padding:0;
+        width: 680px;
+        text-align:center;
+        display:block;
+      }
+
+      #footer #nav ul .index a:link {
+        background-image: none;
+      }
+      #footer #nav ul .original_artwork a:link {
+        background-image: none;
+      }
+
+      #footer #nav ul .shop a:link {
+        background-image: none;
+      }
+      #footer #nav ul .contact a:link {
+        background-image: none;
+      }
+      #footer #nav ul .blog a:link {
+        background-image: none;
+      }
+
+      #footer .val-rule {
+        background-image: url(../img/val-rule.png);
+        background-repeat: no-repeat;
+        height: 20px;
+        margin: 0 auto;
+        width: 680px;
+        background-position: center center;
+        text-align:center;
+      }
+
+    #header .valentina-logo {
+        display: block;
+        margin: 45px 0 0 235px;
+        padding: 0;
+        text-align: left;
+        float: left;
+    }
+
+
+#col_box {
+    display: inline;
+}
+
+#col_box .left_col {
+    display: block;
+    float:left;
+    clear: left;
+    width:200px;
+    margin:0;
+}
+
+#col_box .right_col {
+    display: block;
+    float:left;
+    width:400px;
+    margin:0;
+}
+
+#content #col_box .social-icons  {
+    display: block;
+    float: right;
+    width: 33px;
+    margin: 2.8em 0;
+}
+
+#content .social-icons {
+    display: block;
+    float: right;
+    width: 33px;
+    margin: 0;
+    text-align: top;
+}
+
+// NAV GALL
+
+#nav_gall ul {
+    font-family: Register;
+    font-size: 1em;
+    height: auto;
+    display:block;
+    background-image:none;
+    display: block;
+    @include clearfix;
+    margin: 0 4.5em;
+}
+
+#nav_gall ul li {
+    font-family: $copy-bold, Arial, sans-serif;
+    font-size: 1em;
+    height: 20px;
+    float: left;
+    letter-spacing: 0.1em;
+    background-image: none;
+    display: inline;
+    list-style-type: none;
+    padding: .25em .5em ;
+    margin: 0 1em 1em 0;
+
+}
+
+#nav_gall li a {
+    color: $green;
+    padding:.2em 0;
+    border-bottom: 2px dotted $orange;
+    margin: 0 0 2em 0;
+}
+
+#nav_gall li a:hover {
+    color: $purple;
+}
+
+#original_artwork #nav_gall li.oe_art a {
+    color: $grey;
+}
+
+#digital_artwork #nav_gall li.da_art a {
+    color: $grey;
+}
+
+#patterns #nav_gall li.patt_art a {
+    color: $grey;
+}
+
+#gallery {
+    text-align: center;
+    display: block;
+    float:left;
+    width:620px;
+    margin:0;
+}
+
+#gallery a {
+    border: none;
+}
+
+#gallery img {
+    margin: .5em .5em;
+}
+
+
+/* CONTACT */
+
+#contact #col_box .left_col {
+    display: block;
+    float:left;
+    clear: left;
+    width:250px;
+    margin:0;
+}
+
+#contact #col_box .right_col {
+    display: block;
+    float:left;
+    width:340px;
+    margin:0;
+}
+
+
+/* <<<< CONTACT */
+
+
+/* FORM */
+
+#contactForm {
+    margin: .75em 0 0em 0;
+}
+
+#contactForm .tr-cells td {
+    padding: 0;
+    margin: 0;
+    height: 2em;
+}
+
+#contactForm .tr-cells_message td {
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+#contactForm p {
+    font-family: Register;
+    color: $grey;
+    font-size: 1em;
+    letter-spacing: 0.065em;
+    margin: 0 .5em 0 0;
+    padding: 0;
+    text-align: top;
+    text-align: right;
+}
+
+#contactForm .left {
+    font-family: Register;
+    color: $grey;
+    font-size: 1em;
+    letter-spacing: 0.065em;
+    margin: 0 .5em 0 0;
+    padding: 0;
+    text-align: top;
+    text-align: left;
+    display: block;
+}
+
+.asterisk {
+    color: red;
+    margin: 0 0 0 0;
+}
+
+
+#contactForm input {
+    height: 1.7em;
+}
+
+
+#contactForm input, select, textarea {
+    border: 1px dashed $purple;
+    margin: .5em 0 0 0;
+    width: 220px;
+    background-color: tint(orange, 95%);
+    font-family: $copy-bold;
+    color: $purple;
+    font-size: 1em;
+    padding: 0 0 0 .3em;
+    @include border-radius(6px);
+}
+
+#contactForm textarea {
+    padding: .3em 0 0 .3em;
+}
+
+
+#contactForm button {
+    background-color: $orange;
+    display: block;
+    width: 80px;
+    border: none;
+    font-family: $copy;
+    color: white;
+    font-size: 1.25em;
+    margin: .5em 0 0 0;
+    letter-spacing: 0.05em;
+    padding: 2px 0 2px 0;
+    @include border-radius(6px);
+}
+
+#contactForm button:hover {
+    background-color: $purple;
+}
+
+
+.email a {
+    @include link-colors
+    ($purple,
+     $orange,
+     $purple,
+     $purple,
+     $purple);
+     text-decoration: none;
+}
+
+/* <<<< FORM  */
+
+.instagram-btn-hover, .instagram-btn, .twitter-btn-hover, .flickr-btn-hover, .pinterest-btn-hover,
+.pinterest-btn, .flickr-btn, .facebook-btn-hover, .twitter-btn, .facebook-btn {
+    display: block;
+    background: url('../img/icons/icon_sprite.png') no-repeat;
+    margin: 0 0 .25em 0;
+}
+
+
+.facebook-btn {
+    background-position: -66px -102px; width: 33px; height: 34px; }
+a .facebook-btn:hover {
+    background-position: -0px -69px; width: 33px; height: 34px; }
+
+.twitter-btn {
+    background-position: -33px -69px; width: 33px; height: 34px; }
+a .twitter-btn:hover {
+    background-position: -66px -0px; width: 33px; height: 34px; }
+
+.flickr-btn {
+    background-position: -66px -68px; width: 33px; height: 34px; }
+a .flickr-btn:hover {
+    background-position: -66px -34px; width: 33px; height: 34px; }
+
+.pinterest-btn {
+    background-position: -33px -35px; width: 33px; height: 34px; }
+a .pinterest-btn:hover {
+    background-position: -0px -35px; width: 33px; height: 34px; }
+
+.instagram-btn {
+    background-position: -33px -0px; width: 33px; height: 35px; }
+a .instagram-btn:hover {
+    background-position: -0px -0px; width: 33px; height: 35px; }
+
+
+.delinky a {
+    border: none;
+}
+
+#content #col_box {
+    background-image: url(../img/contact_bird.png);
+    background-repeat: no-repeat;
+    background-position: 0 150px;
+}
+
+// #content #col_box {
+//   background-image: url(../img/contact_bird.png);
+//   background-repeat: no-repeat;
+//   background-position: 0 150px; }
+
+
+#shop .shop-box {
+    display:block;
+    float:left;
+    width:300px;
+    margin:0 0 1em 0
+}
+#shop #content .shop-box h4 {
+    margin:0 0 .25em 0;
+    font-size:.9em;
+    letter-spacing:.07em
+}
+#shop #content .shop-box p {
+    margin:0 0 .25em 0;
+    font-size:.9em;
+    letter-spacing:.07em
+}
+#shop .shop-box img {
+    display:block;
+    float:left;
+    margin:0 1em 0 0
+}
+#shop .shop-text {
+    width:175px;
+    display:block;
+    float:left;
+    margin:0
+}
