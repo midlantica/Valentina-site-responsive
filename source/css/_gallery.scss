@@ -64,7 +64,7 @@ main.gallery {
 
 .nav_gall ul {
     font-family: Register;
-    font-size: 1em;
+    // font-size: 1em;
     height: auto;
     display:block;
     background-image:none;
@@ -85,6 +85,11 @@ main.gallery {
     padding: .25em .5em ;
     margin: 0 1em 1em 0;
     text-align: center;
+
+    @include media($mobile) {
+      font-size: .8em;
+      margin: 0 0em 1em;
+  }
 
 }
 

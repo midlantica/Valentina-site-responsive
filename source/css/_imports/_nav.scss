@@ -8,7 +8,9 @@
   @include media($mobile) {
     @include span-columns(8);
     @include shift(2);
-    margin-top: -4em;
+    margin-top: -1.5em;
+    margin-bottom: 1em;
+
   }
 
   ul {
@@ -28,6 +30,7 @@
       }
 
       @include media($mobile) {
+        font-size: 1.5em;
         // width: 20%;
         // @include span-columns(2 of 10, block-collapse);
         // background: red;
@@ -58,6 +61,12 @@
   background-position: center;
   background-size: contain;
 
+  @include media($mobile) {
+    line-height: 26px;
+    margin-top: -0em;
+  }
+
+
 
   a {
     text-decoration: none;
@@ -72,6 +81,20 @@
     background-image: url(../img/buttons/home_btn.svg);
     cursor: pointer;
 
+    @include media($mobile) {
+      background-image: none;
+      color: $black;
+      // border-bottom: 20px solid $green;
+      // border-width: 1em;
+      height: 1em;
+      // width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      background: $green;
+
+    }
+
+
   }
 }
 .galleryBtn {
@@ -79,6 +102,20 @@
   &:hover {
     background-image: url(../img/buttons/gallery_btn.svg);
     cursor: pointer;
+
+    @include media($mobile) {
+      background-image: none;
+      color: $black;
+      // border-bottom: 20px solid $green;
+      // border-width: 1em;
+      height: 1em;
+      // width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      background: $green;
+
+    }
+
 
   }
 }
@@ -88,6 +125,20 @@
     background-image: url(../img/buttons/shop_btn.svg);
     cursor: pointer;
 
+    @include media($mobile) {
+      background-image: none;
+      color: $black;
+      // border-bottom: 20px solid $green;
+      // border-width: 1em;
+      height: 1em;
+      // width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      background: $green;
+
+    }
+
+
   }
 }
 .contactBtn {
@@ -95,6 +146,20 @@
   &:hover {
     background-image: url(../img/buttons/contact_btn.svg);
     cursor: pointer;
+
+    @include media($mobile) {
+      background-image: none;
+      color: $black;
+      // border-bottom: 20px solid $green;
+      // border-width: 1em;
+      height: 1em;
+      // width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      background: $green;
+
+    }
+
 
   }
 }
@@ -104,24 +169,108 @@
     background-image: url(../img/buttons/blog_btn.svg);
     cursor: pointer;
 
+    @include media($mobile) {
+      background-image: none;
+      color: $black;
+      // border-bottom: 20px solid $green;
+      // border-width: 1em;
+      height: 1em;
+      // width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      background: $green;
+
+    }
+
+
   }
 }
 
 // Upstate on individual pages
 body.index .homeBtn {
   background-image: url(../img/buttons/home_btn.svg);
+
+  @include media($mobile) {
+    background-image: none;
+    color: $black;
+    // border-bottom: 1p20pxolid $green;
+    // border-width: 2e1;
+    height: 1em;
+    // width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    background: $green;
+
+  }
+
 }
 body.artists-statement .homeBtn {
   background-image: url(../img/buttons/home_btn.svg);
+
+  @include media($mobile) {
+    background-image: none;
+    color: $black;
+    // border-bottom: 1p20pxolid $green;
+    // border-width: 2e1;
+    height: 1em;
+    // width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    background: $green;
+
+  }
+
 }
 body.original-artwork .galleryBtn {
   background-image: url(../img/buttons/gallery_btn.svg);
+
+  @include media($mobile) {
+    background-image: none;
+    color: $black;
+    // border-bottom: 1p20pxolid $green;
+    // border-width: 2e1;
+    height: 1em;
+    // width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    background: $green;
+
+  }
+
 }
 body.shop .shopBtn {
   background-image: url(../img/buttons/shop_btn.svg);
+
+  @include media($mobile) {
+    background-image: none;
+    color: $black;
+    // border-bottom: 1p20pxolid $green;
+    // border-width: 2e1;
+    height: 1em;
+    // width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    background: $green;
+
+  }
+
 }
 body.contact .contactBtn {
   background-image: url(../img/buttons/contact_btn.svg);
+
+  @include media($mobile) {
+    background-image: none;
+    color: $black;
+    // border-bottom: 1p20pxolid $green;
+    // border-width: 2e1;
+    height: 1em;
+    // width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    background: $green;
+
+  }
+
 }
 // .blogBtn {
 //   background-image: url(../img/buttons/blog_btn.svg);
