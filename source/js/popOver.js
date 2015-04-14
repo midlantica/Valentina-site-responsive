@@ -3,7 +3,7 @@ var state;
 
 window.onload = function() {
   obj = document.getElementById('popOverImg');
-  readCookie();
+  // readCookie();
   document.getElementById('remove').onclick = function() {
     obj.className = 'hide';
   }

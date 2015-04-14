@@ -1,17 +1,19 @@
 @import "base"; // Compass, Normalize, h5bp, bourbon, neat, !susy, !breakpoint
 @import "colors";
+@import "vendor/modal";
 @import "_imports/fonts";
 @import "_imports/layout";
 @import "_imports/mortar";
 @import "_imports/mixins";
-@import "_imports/modal";
 @import "_imports/nav";
 @import "_imports/_nav_gall";
 @import "_imports/social";
 @import "_imports/typography";
-@import "_contact";
-@import "_shop";
-@import "_gallery";
+@import "vendor/lightbox";
+@import "modal";
+@import "contact";
+@import "shop";
+@import "gallery";
 
 // ########################
 
@@ -43,34 +45,68 @@ a {
 
 // ########################
 
-svg:not(:root) {
-   overflow: visible !important;
+// svg:not(:root) {
+//    overflow: visible !important;
+// }
+
+figure {
+  margin: 0;
+  // padding: 0;
+  > div {
+    margin: 0;
+  }
 }
 
 .headerArt {
   width: 100%;
-  height: auto;
-  // display: invisible;
+  background-image: url(../img/headerC.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 0;
+  padding: 0; /* reset */
+  padding-bottom: 33%;
+
   @include media($mobile) {
-    width: 100%;
-    height: auto;
+    background-image: url(../img/headerC.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 33%;
   }
-  // &:hover {
-  //   background: red;
-  //   display: block;
-  // }
+
 }
 
 .footerArt {
   width: 100%;
-  height: auto;
-  // display: block;
+  background-image: url(../img/footerC.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 0;
+  padding: 0; /* reset */
+  padding-bottom: 25%;
+
+  @include media($mobile) {
+    background-image: url(../img/footerC.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 33%;
+  }
+}
+
+.centerContent {
+  text-align: center;
+  @include clearfix;
 }
 
 .valPic {
   // @include span-columns(3);
   // width: 100%;
-  @include fill-parent();
+  // @include fill-parent();
   margin-top: 0.3em;
   border-radius: 20em;
   // @include media($mobile) {
@@ -107,6 +143,4 @@ svg:not(:root) {
     border: none;
   }
 }
-
-
 

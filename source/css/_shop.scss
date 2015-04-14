@@ -26,7 +26,7 @@ main.shop {
 
       @include media($mobile) {
         @include span-columns(5 of 10);
-        @include omega(6n of 10);
+        @include omega(6n);
         // @include shift(1);
         // box-shadow: none;
         // margin-bottom: 0;

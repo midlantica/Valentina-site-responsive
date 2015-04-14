@@ -10,7 +10,6 @@
     @include shift(2);
     margin-top: -1.5em;
     margin-bottom: 1em;
-
   }
 
   ul {
@@ -30,7 +29,7 @@
       }
 
       @include media($mobile) {
-        font-size: 1.5em;
+        font-size: 1.3em;
         // width: 20%;
         // @include span-columns(2 of 10, block-collapse);
         // background: red;
@@ -42,7 +41,6 @@
 
       a {
         color: $black;
-
       }
     }
   }
@@ -66,13 +64,10 @@
     margin-top: -0em;
   }
 
-
-
   a {
     text-decoration: none;
     border-bottom: none;
   }
-
 }
 
 .homeBtn {
@@ -91,12 +86,10 @@
       text-align: center;
       margin: 0 auto;
       background: $green;
-
     }
-
-
   }
 }
+
 .galleryBtn {
   //
   &:hover {
@@ -113,12 +106,10 @@
       text-align: center;
       margin: 0 auto;
       background: $green;
-
     }
-
-
   }
 }
+
 .shopBtn {
   padding-left: 0.2em;
   &:hover {
@@ -135,12 +126,10 @@
       text-align: center;
       margin: 0 auto;
       background: $green;
-
     }
-
-
   }
 }
+
 .contactBtn {
   //
   &:hover {
@@ -157,12 +146,10 @@
       text-align: center;
       margin: 0 auto;
       background: $green;
-
     }
-
-
   }
 }
+
 .blogBtn {
   padding-left: 0.1em;
   &:hover {
@@ -179,10 +166,7 @@
       text-align: center;
       margin: 0 auto;
       background: $green;
-
     }
-
-
   }
 }
 
@@ -200,10 +184,9 @@ body.index .homeBtn {
     text-align: center;
     margin: 0 auto;
     background: $green;
-
   }
-
 }
+
 body.artists-statement .homeBtn {
   background-image: url(../img/buttons/home_btn.svg);
 
@@ -219,9 +202,11 @@ body.artists-statement .homeBtn {
     background: $green;
 
   }
-
 }
-body.original-artwork .galleryBtn {
+
+body.original-artwork .galleryBtn,
+body.digital-artwork .galleryBtn,
+body.patterns .galleryBtn {
   background-image: url(../img/buttons/gallery_btn.svg);
 
   @include media($mobile) {
@@ -234,10 +219,9 @@ body.original-artwork .galleryBtn {
     text-align: center;
     margin: 0 auto;
     background: $green;
-
   }
-
 }
+
 body.shop .shopBtn {
   background-image: url(../img/buttons/shop_btn.svg);
 
@@ -251,10 +235,9 @@ body.shop .shopBtn {
     text-align: center;
     margin: 0 auto;
     background: $green;
-
   }
-
 }
+
 body.contact .contactBtn {
   background-image: url(../img/buttons/contact_btn.svg);
 
@@ -268,10 +251,5 @@ body.contact .contactBtn {
     text-align: center;
     margin: 0 auto;
     background: $green;
-
   }
-
 }
-// .blogBtn {
-//   background-image: url(../img/buttons/blog_btn.svg);
-// }
