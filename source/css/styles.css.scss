@@ -6,6 +6,7 @@
 @import "_imports/mixins";
 @import "_imports/modal";
 @import "_imports/nav";
+@import "_imports/_nav_gall";
 @import "_imports/social";
 @import "_imports/typography";
 @import "_contact";
@@ -77,6 +78,13 @@ svg:not(:root) {
       // width:1%;
       // background: $white;
   // }
+
+    @include media($mobile) {
+      @include span-columns(6 of 10);
+      @include shift(2);
+      margin-right: 2em;
+    }
+
 }
 
 .statement {
@@ -84,6 +92,13 @@ svg:not(:root) {
   text-align: center;
   float: none;
   margin-top: 0.4em;
+
+  @include media($mobile) {
+    display: block;
+    margin-bottom: 0;
+    @include clearfix;
+  }
+
 }
 
 .delinky {
