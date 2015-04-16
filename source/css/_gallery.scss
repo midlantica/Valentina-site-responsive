@@ -1,19 +1,3 @@
-// #gallery {
-//     text-align: center;
-//     display: block;
-//     float:left;
-//     width:620px;
-//     margin:0;
-// }
-
-// #gallery a {
-//     border: none;
-// }
-
-// #gallery img {
-//     margin: .5em .5em;
-// }
-
 main.gallery {
   text-align: center;
   // display: block;
@@ -65,6 +49,10 @@ main.gallery {
       &.galleryGrid {
         text-align: center;
         // background: transparentize($orange,.5);
+
+        @include media($mobile) {
+          margin-bottom: 0.5em;
+        }
         img {
           @include fill-parent();
           // border-top-left-radius: 0.5em;
@@ -77,9 +65,7 @@ main.gallery {
         }
       }
     }
-
   }
 }
-
 
 

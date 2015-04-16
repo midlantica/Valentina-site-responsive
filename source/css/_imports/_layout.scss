@@ -1,6 +1,5 @@
 //  GRID SETTINGS
 
-
 // $local-max-width: 400px;
 $max-width: em(1024) !default;
 // $med-width: new-breakpoint(min-width 800);
@@ -50,16 +49,11 @@ header, footer {
 }
 
 .content {
-    // @include span-columns(12);
     @include span-columns(10);
     @include shift(1);
-    // @include fill-parent();
     padding: 0;
-    // padding: 1.5em 0em 1.5em;
     @include clearfix;
-    // background: $white;
     overflow: hidden;
-    // margin-bottom: 1em;
 
     // @media screen and (max-width: 760px) {
     //   margin-left: inherit;
@@ -95,4 +89,30 @@ header, footer {
             @include omega();
         }
     }
+
+    // 2 Columns
+    main.twoColMain {
+      @include span-columns(9 of 10);
+
+      @include media($mobile) {
+        @include span-columns(9 of 10);
+      }
+    }
+
+    // Last Col Social
+    aside.social {
+      @include span-columns(1 of 10);
+      @include omega();
+      margin-bottom: 1em;
+
+      .social-icons {
+        margin: 0.5em 0 0;
+      }
+
+      @include media($mobile) {
+        @include span-columns(1 of 10);
+        @include omega();
+      }
+    }
+
 }

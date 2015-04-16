@@ -40,6 +40,12 @@ main.shop {
       &.shopGrid {
         text-align: center;
         // background: transparentize($orange,.5);
+
+        @include media($mobile) {
+          margin-bottom: 0.5em;
+
+        }
+
         img {
           @include fill-parent();
           border-top-left-radius: 0.5em;
@@ -47,6 +53,7 @@ main.shop {
         }
         p {
           margin: 0.5em auto;
+          font-size: 0.7em;
         }
       }
     }

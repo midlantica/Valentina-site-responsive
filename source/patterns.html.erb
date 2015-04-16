@@ -3,13 +3,15 @@ title: Valentina Design - Feeling Inspired :)
 ---
 <%= partial "partials/header" %>
 <%= partial "partials/nav" %>
+
 <div class="content">
   <%= partial "partials/gallery_nav" %>
-  <main class="gallery">
-  <!-- 4x4 GRID, MOBILE 2x~ -->
-  <% patt_title ="patterns" %>
-  <% patt_path ="img/lightbox/gallery/patterns/" %>
-  <div id='gallery'>
+
+  <main class="twoColMain gallery">
+
+    <% patt_title ="patterns" %>
+    <% patt_path ="img/lightbox/gallery/patterns/" %>
+
     <ul>
       <li class="galleryGrid">
         <a href="<%=patt_path%>i_spy.jpg" rel="lightbox[<%=patt_title%>]"
@@ -282,6 +284,13 @@ title: Valentina Design - Feeling Inspired :)
         </a>
       </li>
     </ul>
-    </main>
-  </div>
-  <%= partial "partials/footer" %>
+
+  </main>
+
+  <aside class="social">
+    <%= partial "partials/social" %>
+  </aside>
+
+</div>
+
+<%= partial "partials/footer" %>
