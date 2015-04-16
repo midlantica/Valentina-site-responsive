@@ -12,13 +12,13 @@ html {
 }
 
 body {
-    @include outer-container;
-    background: $purple;
+  @include outer-container;
+  background: $purple;
 
-    @include media($mobile) {
-        // @include span-columns(12);
-        background: $white;
-    }
+  @include media($mobile) {
+      // @include span-columns(12);
+      background: $white;
+  }
 }
 
 .wrapper {
@@ -37,57 +37,57 @@ body {
 }
 
 header, footer {
-    @include span-columns(12);
-    // background: aqua;
-    clear: both;
-    @include clearfix;
-    text-align: center;
+  @include span-columns(12);
+  // background: aqua;
+  clear: both;
+  @include clearfix;
+  text-align: center;
 
-    @include media($mobile) {
-        // @include span-columns(12);
-    }
+  @include media($mobile) {
+      // @include span-columns(12);
+  }
 }
 
 .content {
-    @include span-columns(10);
-    @include shift(1);
-    padding: 0;
-    @include clearfix;
-    overflow: hidden;
+  @include span-columns(10);
+  @include shift(1);
+  padding: 0;
+  @include clearfix;
+  overflow: hidden;
 
-    // @media screen and (max-width: 760px) {
-    //   margin-left: inherit;
-    // }
+  // @media screen and (max-width: 760px) {
+  //   margin-left: inherit;
+  // }
 
     aside.col1 {
-        @include span-columns(3 of 10);
-        // @include shift(1);
-        // background: pink;
+      @include span-columns(3 of 10);
+      // @include shift(1);
+      // background: pink;
 
-        @include media($mobile) {
-            @include span-columns(12);
-            // @include shift(2);
-            margin-bottom: 1em;
-        }
+      @include media($mobile) {
+          @include span-columns(12);
+          // @include shift(2);
+          margin-bottom: 1em;
+      }
     }
     main.home {
-        @include span-columns(6 of 10);
-        // background: $greyLightest;
+      @include span-columns(6 of 10);
+      // background: $greyLightest;
 
-        @include media($mobile) {
-            @include span-columns(9 of 10);
-        }
+      @include media($mobile) {
+          @include span-columns(9 of 10);
+      }
     }
     aside.col3 {
-        @include span-columns(1 of 10);
-        @include omega();
-        // background: aliceblue;
-        margin-bottom: 1em;
+      @include span-columns(1 of 10);
+      @include omega();
+      // background: aliceblue;
+      margin-bottom: 1em;
 
-        @include media($mobile) {
-            @include span-columns(1 of 10);
-            @include omega();
-        }
+      @include media($mobile) {
+          @include span-columns(1 of 10);
+          @include omega();
+      }
     }
 
     // 2 Columns

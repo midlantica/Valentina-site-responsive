@@ -1,8 +1,8 @@
 .socialIconsBox  {
-  margin: 0 auto;
+  margin: .5em auto 0;
   text-align: center;
   // width: 33px;
-  margin-top: 0.5em;
+  // margin-top: 0.5em;
   padding: 0 0.6em;
 
   @include media($mobile) {
@@ -20,11 +20,11 @@
 
   @include media($mobile) {
     width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 0;
-  padding: 0; /* reset */
-  padding-bottom: 130%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: 130%;
   }
 }
 

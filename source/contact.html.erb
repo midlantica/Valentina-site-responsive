@@ -1,89 +1,86 @@
 ---
 title: Valentina Design - Feeling Inspired :)
 ---
-
-  <%= partial "partials/header" %>
-
-  <%= partial "partials/nav" %>
-
-  <div class="content">
-
-    <aside class="col1 contactCol">
-        <!-- &nbsp; -->
-    </aside>
-
-    <main class="contactContent">
-
-      <h2 class="emailHead">Send me an email</h2>
-      <p class="email">email: <a href="mailto:valentina@valentinadesign.com">valentina@valentinadesign.com</a></p>
-
-      <!-- Begin myContactForm.com Form HTML -->
-      <form name="contactForm" id="contactForm" method="post"  action="http://www.mycontactform.com/sendform/sendform.php">
-
-        <table>
-          <tr class="tr-cells">
-            <td>
-              <p>name<span class="asterisk">*</span></p>
-            </td>
-            <td>
-              <input name="q1" type="text" id="q1" value="" size="19" maxlength="40" >
-            </td>
-          </tr>
-          <tr class="tr-cells">
-            <td>
-              <p>subject<span class="asterisk">*</span></p>
-            </td>
-            <td>
-              <input name="subject" type="text" id="subject" size="19" maxlength="30"  required="required">
-            </td>
-          </tr>
-          <tr class="tr-cells">
-            <td>
-              <p>email<span class="asterisk">*</span></p>
-            </td>
-            <td>
-              <input name="email" type="email" id="email" size="19" maxlength="100" required >
-            </td>
-          </tr>
-          <tr class="tr-cells_message">
-            <td valign="top">
-              <p>message&nbsp;</p>
-            </td>
-            <td>
-              <textarea name="q2" id="q2" cols="20" rows="4" ></textarea>
-            </td>
-          </tr>
-          <tr class="tr-cells">
-          </tr>
-          <tr class="tr-cells">
-            <td>
-              &nbsp;
-            </td>
-            <td>
-              <input name="user" type="hidden" id="user" value="valentina_73">
-              <input name="formid" type="hidden" id="formid" value="135001">
-              <button name="submit" type="submit" value="Submit">submit</button>
-            </td>
-          </tr>
-          <tr class="tr-cells">
-            <td>
-              &nbsp;
-            </td>
-            <td>
-              <span class="left"><span class="asterisk">*</span>required</p>
-            </td>
-          </tr>
-        </table>
-
-      </form>
-      <!-- End myContactForm.com Form HTML -->
-
-    </main>
-
-    <aside class="col3">
-      <%= partial "partials/social" %>
-    </aside>
-
-  </div>
-
-  <%= partial "partials/footer" %>
+<%= partial "partials/header" %>
+<%= partial "partials/nav" %>
+<div class="content">
+  <aside class="col1">
+  </aside>
+  <main class="contactContent">
+  <!-- Begin myContactForm.com Form HTML -->
+  <form name="contactForm" id="contactForm" method="post" action="http://www.mycontactform.com/sendform/sendform.php">
+    <table class="contactTable">
+      <tr >
+        <td></td>
+        <td>
+          <h2 class="emailHead">Send me an email</h2>
+          <p class="emailLeft"><a href="mailto:valentina@valentinadesign.com">valentina@valentinadesign.com</a></p>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <h4>Or fill out this form</h4>
+        </td>
+      </tr>
+      <tr class="tr-cells">
+        <td>
+          <p>name<span class="asterisk">*</span></p>
+        </td>
+        <td>
+          <input name="q1" type="text" id="q1" value="" size="12" maxlength="40" >
+        </td>
+      </tr>
+      <tr class="tr-cells">
+        <td>
+          <p>subject<span class="asterisk">*</span></p>
+        </td>
+        <td>
+          <input name="subject" type="text" id="subject" size="12" maxlength="30"  required="required">
+        </td>
+      </tr>
+      <tr class="tr-cells">
+        <td>
+          <p>email<span class="asterisk">*</span></p>
+        </td>
+        <td>
+          <input name="email" type="email" id="email" size="12" maxlength="100" required >
+        </td>
+      </tr>
+      <tr class="tr-cells_message">
+        <td valign="top">
+          <p>message&nbsp;</p>
+        </td>
+        <td>
+          <textarea name="q2" id="q2" cols="20" rows="4" ></textarea>
+        </td>
+      </tr>
+      <tr class="tr-cells">
+      </tr>
+      <tr class="tr-cells">
+        <td>
+          &nbsp;
+        </td>
+        <td>
+          <input name="user" type="hidden" id="user" value="valentina_73">
+          <input name="formid" type="hidden" id="formid" value="135001">
+          <button name="submit" type="submit" value="Submit">submit</button>
+        </td>
+      </tr>
+      <tr class="tr-cells">
+        <td>
+          &nbsp;
+        </td>
+        <td>
+          <span class="left"><span class="asterisk">*</span>required</p>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <!-- End myContactForm.com Form HTML -->
+  </main>
+  <aside class="social">
+    <%= partial "partials/social" %>
+  </aside>
+</div>
+<%= partial "partials/footer" %>

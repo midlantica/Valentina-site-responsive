@@ -42,10 +42,8 @@ main.shop {
         // background: transparentize($orange,.5);
 
         @include media($mobile) {
-          margin-bottom: 0.5em;
 
         }
-
         img {
           @include fill-parent();
           border-top-left-radius: 0.5em;
