@@ -51,7 +51,7 @@ main.gallery {
         // background: transparentize($orange,.5);
 
         @include media($mobile) {
-          margin-bottom: 0.5em;
+          margin-bottom: 0.75em;
         }
         img {
           @include fill-parent();
