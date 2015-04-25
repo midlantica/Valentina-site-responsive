@@ -1,6 +1,6 @@
 .contact .content aside.col1 {
   @include span-columns(3 of 10);
-  background-image: url(../../img/contact_bird.png);
+  background-image: url(../img/contact_bird.png);
   background-repeat: no-repeat;
   background-position: -90px 20px;
   // @include fill-parent();

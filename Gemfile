@@ -13,10 +13,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 #######################
 
-# https://github.com/toy/image_optim
-gem 'image_optim'
-gem 'image_optim_pack'
-
 gem 'sass'
 gem 'compass'
 # gem 'susy'
@@ -32,3 +28,5 @@ gem 'middleman-deploy', '~> 1.0'
 
 gem 'middleman-autoprefixer'
 
+# https://github.com/plasticine/middleman-imageoptim
+gem 'middleman-imageoptim'

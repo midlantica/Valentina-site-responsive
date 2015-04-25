@@ -67,6 +67,7 @@ set :fonts_dir,  'css/fonts'
 #----------------------------
 
 #Folder settings
+# http_path = ""
 project_type    = :stand_alone
 relative_assets = true        # because we're not working from the root
 sass_dir        = "css"       # where our .scss files are
@@ -88,6 +89,8 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+
+  # activate :directory_indexes
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
