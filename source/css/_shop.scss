@@ -9,20 +9,16 @@ main.shop {
     }
 
     li {
-      @include span-columns(3);
-      @include omega(4n);
-      background: $beige;
-      margin-bottom: 1em;
-      // height: 180px;
-      // width: 100%;
-      @include box-shadow($grey 0px 2px 6px -2px);
-      border-radius: 0.5em;
-
-      // @include media($med-width) {
-      //   @include span-columns(1);
-      //   @include omega(2n);
-      //   margin-bottom: 1em;
-      // }
+      @include media($med-width) {
+        @include span-columns(3 of 9);
+        @include omega(3n);
+        background: $beige;
+        margin-bottom: 1em;
+        // height: 180px;
+        // width: 100%;
+        @include box-shadow($grey 0px 2px 6px -2px);
+        border-radius: 0.5em;
+      }
 
       @include media($mobile) {
         @include span-columns(5 of 10);
@@ -32,6 +28,9 @@ main.shop {
         // margin-bottom: 0;
         margin-bottom: 1em;
         padding: 0;
+        background: $beige;
+        @include box-shadow($grey 0px 2px 6px -2px);
+        border-radius: 0.5em;
         &:nth-child(even) {
           margin-right: 0em;
         }
