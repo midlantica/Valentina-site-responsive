@@ -1,6 +1,6 @@
 @import "base"; // Compass, Normalize, h5bp, bourbon, neat, !susy, !breakpoint
 @import "colors";
-@import "vendor/modal";
+@import "_imports/modals";
 @import "_imports/fonts";
 @import "_imports/layout";
 @import "_imports/mortar";
@@ -9,7 +9,7 @@
 @import "_imports/_nav_gall";
 @import "_imports/social";
 @import "_imports/typography";
-@import "vendor/lightbox";
+@import "vendor/lightbox.css";
 @import "modal";
 @import "contact";
 @import "shop";

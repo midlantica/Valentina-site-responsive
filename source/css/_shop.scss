@@ -16,8 +16,9 @@ main.shop {
         margin-bottom: 1em;
         // height: 180px;
         // width: 100%;
-        @include box-shadow($grey 0px 2px 6px -2px);
-        border-radius: 0.5em;
+        // @include box-shadow($grey 0px 2px 6px -2px);
+        border-radius: 2px;
+        border: 1px solid $greyLightest;
       }
 
       @include media($mobile) {
@@ -29,8 +30,8 @@ main.shop {
         margin-bottom: 1em;
         padding: 0;
         background: $beige;
-        @include box-shadow($grey 0px 2px 6px -2px);
-        border-radius: 0.5em;
+        // @include box-shadow($grey 0px 2px 6px -2px);
+        border-radius: 2px;
         &:nth-child(even) {
           margin-right: 0em;
         }
@@ -45,8 +46,8 @@ main.shop {
         }
         img {
           @include fill-parent();
-          border-top-left-radius: 0.5em;
-          border-top-right-radius: 0.5em;
+          border-top-left-radius: 2px;
+          border-top-right-radius: 2px;
         }
         p {
           margin: 0.5em auto;

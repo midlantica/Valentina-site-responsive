@@ -30,6 +30,7 @@ body {
   // background-image: url(../img/white_back_patt_trans.png);
   background-repeat: repeat-y;
   background-position: center top;
+  margin-top: -8px;
   // position: absolute;
   @include media($mobile) {
     background: $white;

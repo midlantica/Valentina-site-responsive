@@ -1,7 +1,7 @@
 // COMPASS CONFIG???
 @import "compass";
-@import "normalize";
-@import "h5bp";
+@import "normalize.min.css";
+@import "h5bp.css";
 // @import "susy";
 // @import "breakpoint";
 
@@ -15,9 +15,10 @@ $midblue             : #AADBF5;
 $dkblue              : #41A8DF;
 $dkerblue            : #298EC3;
 $textblue            : #072f44;
-@import "vendor/fontawesome/font-awesome";
-@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "../../bower_components/neat/app/assets/stylesheets/neat";
+
+// @import "vendor/fontawesome/font-awesome";
+@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../bower_components/neat/app/assets/stylesheets/_neat.scss";
 
 // #################
 
