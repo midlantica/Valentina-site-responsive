@@ -20,7 +20,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 #######################
 
 gem 'sass'
-# gem 'compass'
 # gem 'susy'
 gem 'bourbon'
 gem 'neat'

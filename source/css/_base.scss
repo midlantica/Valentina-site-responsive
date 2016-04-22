@@ -16,9 +16,9 @@ $dkblue              : #41A8DF;
 $dkerblue            : #298EC3;
 $textblue            : #072f44;
 
-// @import "vendor/fontawesome/font-awesome";
-@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
-@import "../../bower_components/neat/app/assets/stylesheets/_neat.scss";
+@import "bourbon";
+// @import "base/base";   /* Bitters needs to be imported before Neat */
+@import "neat";
 
 // #################
 

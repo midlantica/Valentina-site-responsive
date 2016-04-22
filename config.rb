@@ -19,12 +19,12 @@ set :fonts_dir,  'css/fonts'
 
 #Folder settings
 # http_path = ""
-project_type    = :stand_alone
-relative_assets = true        # because we're not working from the root
-sass_dir        = "css"       # where our .scss files are
-css_dir         = "css"       # where the CSS will saved
-images_dir      = "img"       # the folder with your images
-fonts_dir       = "scss/fonts" # the folder with your fonts
+# project_type    = :stand_alone
+# relative_assets = true        # because we're not working from the root
+# sass_dir        = "css"       # where our .scss files are
+# css_dir         = "css"       # where the CSS will saved
+# images_dir      = "img"       # the folder with your images
+# fonts_dir       = "scss/fonts" # the folder with your fonts
 
 
 ###
@@ -54,9 +54,11 @@ fonts_dir       = "scss/fonts" # the folder with your fonts
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
+activate :gzip
+activate :minify_html
 
 # activate :bower
-import_path File.expand_path('bower_components', app.root)
+# import_path File.expand_path('bower_components', app.root)
 # sprockets.append_path File.join "#{root}", "bower_components"
 
 # https://github.com/middleman/middleman-autoprefixer
@@ -70,7 +72,7 @@ end
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload, port: '4567', livereload_css_target: "css/style.css"
-  # activate :livereload, host: '10.0.0.5', port: '4567', livereload_css_target: "css/style.css"
+
 end
 
 # Methods defined in the helpers block are available in templates
@@ -83,25 +85,18 @@ end
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  activate :minify_css
 
-  # Minify Javascript on build
-  activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
   activate :relative_assets
+
+  activate :minify_css
+  activate :minify_html
+  activate :minify_javascript
+  activate :imageoptim
 
   # activate :directory_indexes
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  # https://github.com/plasticine/middleman-imageoptim
-  # activate :imageoptim
 
 end
 
