@@ -88,7 +88,10 @@ figure {
   height: 0;
   padding: 0; /* reset */
   padding-bottom: 25%;
-  margin-bottom: -0.6em;
+  // margin-bottom: 0em;
+  // margin-top: 1em;
+  background-position-y: 0.7em;
+
 
   @include media($mobile) {
     background-image: url(../img/footer.svg);
@@ -98,7 +101,8 @@ figure {
     height: 0;
     padding: 0; /* reset */
     padding-bottom: 33%;
-    margin-top: 1.3em;
+    // margin-top: 1.3em;
+    background-position-y: 1.4em;
   }
 }
 

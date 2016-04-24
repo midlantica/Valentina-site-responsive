@@ -17,6 +17,9 @@ gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
+# gem 'therubyracer', '~> 3.16.14.13' # faster JS compiles
+gem 'oj' # faster JS compiles
+
 #######################
 
 gem 'sass'
@@ -30,6 +33,7 @@ gem 'middleman-minify-html'
 
 # https://github.com/middleman-contrib/middleman-deploy
 # gem 'middleman-deploy', '~> 1.0'
+# DOESN'T WORK WITH MIDDLEMAN 4
 
 gem 'middleman-autoprefixer'
 

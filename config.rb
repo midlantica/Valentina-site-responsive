@@ -54,8 +54,6 @@ set :fonts_dir,  'css/fonts'
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
-activate :gzip
-activate :minify_html
 
 # activate :bower
 # import_path File.expand_path('bower_components', app.root)
@@ -63,7 +61,7 @@ activate :minify_html
 
 # https://github.com/middleman/middleman-autoprefixer
 activate :autoprefixer do |config|
-  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.browsers = ['last 2 versions', '>5%']
   config.cascade  = true
   config.inline   = true
   # config.ignore   = ['hacks.css']
@@ -72,6 +70,7 @@ end
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload, port: '4567', livereload_css_target: "css/style.css"
+  # activate :minify_css
 
 end
 
@@ -92,6 +91,8 @@ configure :build do
   activate :minify_html
   activate :minify_javascript
   activate :imageoptim
+
+  activate :gzip
 
   # activate :directory_indexes
 
